@@ -1,0 +1,117 @@
+.pool {
+    position: relative;
+    width: 300px;
+    height: 315px;
+    background-color: rgba(30, 30, 39, 0.3);
+    border: 2px solid #505050;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.pool .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 65px;
+    width: 100%;
+    border-bottom: 2px solid #505050;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(30, 30, 39, 0.3);
+}
+
+.pool .header div {
+    margin-left: 15px;
+}
+
+.pool .header div h1 {
+    color: white;
+    font-size: 28px;
+}
+
+.pool .header div p {
+    color: #D2D2D2;
+    font-size: 12px;
+}
+
+.pool .header img {
+    margin-right: 15px;
+    width: 28px;
+    cursor: pointer;
+}
+
+.pool .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 250px;
+    width: 100%;
+}
+
+.pool .container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.pool .container div small {
+    color: white;
+    font-size: 18px;
+}
+
+.pool .container div button {
+    color: #309AFC;
+    font-weight: 700;
+    width: 220px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #309AFC;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pool .container div div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pool .container div div small {
+    color: white;
+    font-size: 20px;
+}
+
+.pool .container div small span {
+    padding: 5px 10px;
+    background: rgba(48, 154, 252, 0.24);
+    border-radius: 10px;
+}
+
+.pool .container div div p {
+    color: #309AFC;
+}
+
+.pool .container div div p span {
+    color: #D2D2D2;
+}
+
+.pool .container button {
+    width: 90%;
+    height: 50px;
+    background: rgb(71,163,250);
+    background: linear-gradient(90deg, rgba(71,163,250,1) 0%, rgba(196,37,255,1) 100%);
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}

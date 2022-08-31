@@ -1,0 +1,148 @@
+.normal {
+    position: fixed;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 83%;
+    height: 347px;
+    background-color: rgba(30, 30, 39, 0.3);
+    border: 2px solid #505050;
+    border-radius: 10px;
+    z-index: -3;
+}
+
+.normal .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid #505050;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(30, 30, 39, 0.3);
+}
+
+.normal .header h1 {
+    color: white;
+    font-size: 32px;
+    margin-left: 10px;
+}
+
+.normal .header img {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.normal .container {
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+.normal .container .input1, .input2 {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    border: 2px solid #505050;
+    border-radius: 10px;
+    background-color: rgba(30, 30, 39, 0.8);
+}
+
+.normal .container .input1 div, .input2 div {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.normal .container .input1 div .icon, .input2 div .icon {
+    width: 30px;
+}
+
+.normal .container .input1 div .caretdown, .input2 div .caretdown {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.normal .container .input1 img, .input2 img {
+    margin-right: 10px;
+}
+
+.normal .container .input1 h1, .input2 h1 {
+    font-size: 24px;
+    color: white;
+    margin-right: 10px;
+}
+
+.normal .container .input1 input, .input2 input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: none;
+    padding-left: 10px;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    color: white;
+    background: transparent;
+}
+
+.normal .container .input1 input:focus, .input2 input:focus {
+    outline: none;
+}
+
+.normal .container .input1 input::placeholder, .input2 input::placeholder {
+    color: white;
+}
+
+.normal .container .input1 {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+}
+
+.normal .container .arrow {
+    height: 24px;
+    position: absolute;
+    left: 50%;
+    top: 95px;
+    transform: translateX(-50%);
+}
+
+.normal .container .input2 {
+    position: absolute;
+    left: 50%;
+    top: 134px;
+    transform: translateX(-50%);
+}
+
+.normal .container .button {
+    width: 90%;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 214px;
+    transform: translateX(-50%);
+    background: rgb(71,163,250);
+    background: linear-gradient(90deg, rgba(71,163,250,1) 0%, rgba(196,37,255,1) 100%);
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    .home {
+        width: 83vw;
+    }
+}

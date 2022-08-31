@@ -1,0 +1,121 @@
+.confirm {
+    position: fixed;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 83%;
+    height: 430px;
+    background-color: rgba(30, 30, 39, 0.3);
+    border: 2px solid #505050;
+    border-radius: 10px;
+    z-index: 100;
+    z-index: -3;
+}
+
+.confirm .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid #505050;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(30, 30, 39, 0.3);
+}
+
+.confirm .header .back {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.confirm .header .exit {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.confirm .container {
+    margin-top: 50px;
+    width: 100%;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.confirm .container .from, .to {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.confirm .container .from, .to {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.confirm .container .from h1, .to h1{
+    color: white;
+    font-size: 24px;
+}
+
+.confirm .container .from div, .to div {
+    display: flex;
+    align-items: center;
+}
+
+.confirm .container .from div h1, .to div h1 {
+    margin-left: 10px;
+}
+
+.confirm .container .from div img, .to div img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.confirm .container p {
+    width: 90%;
+    color: #D2D2D2;
+    font-size: 16px;
+}
+
+.confirm .container .information {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.confirm .container .information div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.confirm .container .information div small {
+    font-size: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.confirm .container .information img {
+    margin-left: 10px;
+}
+
+.confirm .container .button {
+    width: 90%;
+    height: 50px;
+    background: rgb(71,163,250);
+    background: linear-gradient(90deg, rgba(71,163,250,1) 0%, rgba(196,37,255,1) 100%);
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
