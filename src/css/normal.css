@@ -142,7 +142,13 @@
 }
 
 @media only screen and (max-width: 1000px) {
+
+    .normal {
+        top: 65%;
+    }
+
     .home {
         width: 83vw;
     }
+    
 }

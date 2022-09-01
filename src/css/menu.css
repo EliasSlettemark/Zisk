@@ -35,10 +35,13 @@
 }
 
 @media screen and (max-width: 1000px) {
+
     .mode {
         display: block;
     }
+    
     .menu {
         display: block;
     }
+
 }

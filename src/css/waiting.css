@@ -17,6 +17,7 @@
     top: 20px;
     right: 20px;
     cursor: pointer;
+    z-index: 100;
 }
 
 .waiting .container {
@@ -59,4 +60,13 @@
     color: #D2D2D2;
     font-size: 20px;
     text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .waiting {
+        top: 65%;
+        height: 370px;
+    }
+
 }

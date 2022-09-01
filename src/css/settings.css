@@ -178,6 +178,10 @@
 }
 
 @media screen and (max-width: 1000px) {
+  
+  .settings {
+    top: 65%;
+  }
 
   .settings .container .section .slippageTolerance small {
     padding: 8px 25px;
