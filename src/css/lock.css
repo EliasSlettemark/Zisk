@@ -1,0 +1,185 @@
+.lock {
+    position: fixed;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 83%;
+    height: 430px;
+    background-color: rgba(30, 30, 39, 0.3);
+    border: 2px solid #505050;
+    border-radius: 10px;
+    z-index: 100;
+    z-index: -3;
+}
+
+.lock .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    border-bottom: 2px solid #505050;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(30, 30, 39, 0.3);
+}
+
+.lock .header h1 {
+    margin-left: 15px;
+    background: #509CFB;
+    background: linear-gradient(to right, #509CFB 0%, #BA31FF 100%, #BA31FF 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+}
+
+.lock .header img {
+    margin-right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.lock .container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.lock .container .box {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.lock .container .box .active {
+    background: radial-gradient(circle at 100% 100%, #26273a 0, #26273a 1px, transparent 1px) 0% 0%/4px 4px no-repeat,
+    radial-gradient(circle at 0 100%, #26273a 0, #26273a 1px, transparent 1px) 100% 0%/4px 4px no-repeat,            
+    radial-gradient(circle at 100% 0, #26273a 0, #26273a 1px, transparent 1px) 0% 100%/4px 4px no-repeat,            
+    radial-gradient(circle at 0 0, #26273a 0, #26273a 1px, transparent 1px) 100% 100%/4px 4px no-repeat,            
+    linear-gradient(#26273a, #26273a) 50% 50%/calc(100% - 6px) calc(100% - 8px) no-repeat,            
+    linear-gradient(#26273a, #26273a) 50% 50%/calc(100% - 8px) calc(100% - 6px) no-repeat,            
+    linear-gradient(90deg, #4f9dfb 0%, #bb30ff 100%) no-repeat;
+    border-radius: 4px;
+}
+
+.lock .container .box button {
+    width: 200px;
+    height: 70px;
+    background: #26273A;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    color: #D2D2D2;
+    cursor: pointer;
+}
+
+.lock .container .box button span {
+    background: linear-gradient(90.27deg, #509DFB 8.51%, #BB31FF 93.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 20px;
+}
+
+.lock .container .input {
+    position: relative;
+    width: 85%;
+    height: 50px;
+    border: 2px solid #505050;
+    border-radius: 10px;
+    background-color: rgba(30, 30, 39, 0.8);
+}
+
+.lock .container .input input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    width: 80%;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.lock .container .input h1 {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: white;
+}
+
+.lock .container input::placeholder {
+    color: white;
+}
+
+.lock .container input:focus {
+    outline: none;
+}
+
+.lock .container button {
+    width: 90%;
+    height: 65px;
+    border: none;
+    font-size: 22px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background: rgb(71,163,250);
+    background: linear-gradient(90deg, rgba(71,163,250,1) 0%, rgba(196,37,255,1) 100%);
+    cursor: pointer;
+}
+
+.lock .lockupLength {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.lock .lockupLength h1 {
+    font-size: 14px;
+    color: #D2D2D2;
+    margin-bottom: 10px;
+}
+
+.lock .lockupLength div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lock .lockupLength div button {
+    width: 100px;
+    height: 65px;
+    background: #26273A;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.lock .lockupLength div button span {
+    font-size: 18px;
+    background: linear-gradient(90.27deg, #509DFB 8.51%, #BB31FF 93.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.lock .lockupLength div .active {
+    background: radial-gradient(circle at 100% 100%, #26273a 0, #26273a 1px, transparent 1px) 0% 0%/4px 4px no-repeat,
+    radial-gradient(circle at 0 100%, #26273a 0, #26273a 1px, transparent 1px) 100% 0%/4px 4px no-repeat,            
+    radial-gradient(circle at 100% 0, #26273a 0, #26273a 1px, transparent 1px) 0% 100%/4px 4px no-repeat,            
+    radial-gradient(circle at 0 0, #26273a 0, #26273a 1px, transparent 1px) 100% 100%/4px 4px no-repeat,            
+    linear-gradient(#26273a, #26273a) 50% 50%/calc(100% - 6px) calc(100% - 8px) no-repeat,            
+    linear-gradient(#26273a, #26273a) 50% 50%/calc(100% - 8px) calc(100% - 6px) no-repeat,            
+    linear-gradient(90deg, #4f9dfb 0%, #bb30ff 100%) no-repeat;
+    border-radius: 4px;
+}
