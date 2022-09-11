@@ -11,7 +11,7 @@
   z-index: -3;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 985px) {
   .pools {
     top: 200px;
     padding-bottom: 50px;
