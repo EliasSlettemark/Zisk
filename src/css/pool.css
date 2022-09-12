@@ -68,16 +68,23 @@
     font-size: 18px;
 }
 
-.pool .container div button {
-    color: #309AFC;
-    font-weight: 700;
-    width: 220px;
-    height: 50px;
-    background: transparent;
-    border: 1px solid #309AFC;
-    border-radius: 10px;
-    cursor: pointer;
+.pool .container div .collect {
+    position: relative;
+    background: none;
 }
+
+.pool .container div .collect::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px; 
+    padding: 2px; 
+    background:linear-gradient(90deg, #4F9DFB,#BB30FF); 
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude; 
+} 
 
 .pool .container div div {
     display: flex;
@@ -96,8 +103,11 @@
     border-radius: 10px;
 }
 
-.pool .container div div p {
-    color: #309AFC;
+.pool .container div div p:last-child {
+    background: linear-gradient(to right, #509CFB 0%, #BA31FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .pool .container div div p span {
@@ -107,7 +117,6 @@
 .pool .container button {
     width: 90%;
     height: 50px;
-    background: rgb(71,163,250);
     background: linear-gradient(90deg, rgba(71,163,250,1) 0%, rgba(196,37,255,1) 100%);
     color: white;
     font-size: 16px;

@@ -8,6 +8,8 @@ export default function Lock(){
 
     const [lockupLength, setLockupLength] = React.useState("7days")
 
+    const [input, setInput] = React.useState("")
+
     return (
         <div className="lock">
             <div className="header">
@@ -29,7 +31,7 @@ export default function Lock(){
                     </div>
                 </div>
                 <div className="input">
-                    <input placeholder="0.0" />
+                    <input onChange={(e) => setInput(e.target.value)} placeholder="0.0" />
                     <h1>ZISK</h1>
                 </div>
                 <button>Zap</button>

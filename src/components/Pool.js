@@ -26,7 +26,7 @@ export default function Pool(props){
                         <p><span>{props.usdamount}</span></p>
                         <p>Stake ZISK</p>
                     </div>
-                    <button>Collect</button>
+                    <button className="collect">Collect</button>
                 </div>
                 <button>{props.button}</button>
             </div>

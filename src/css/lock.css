@@ -27,8 +27,7 @@
 
 .lock .header h1 {
     margin-left: 15px;
-    background: #509CFB;
-    background: linear-gradient(to right, #509CFB 0%, #BA31FF 100%, #BA31FF 80%);
+    background: linear-gradient(to right, #509CFB 0%, #BA31FF 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -87,6 +86,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .lock .container .input {
@@ -175,6 +175,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-weight: bold;
 }
 
 .lock .lockupLength div .active {
