@@ -11,9 +11,11 @@
   z-index: -3;
 }
 
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 972px) {
   .pools {
     top: 200px;
     padding-bottom: 50px;
+    justify-content: center;
+    min-height: 600px;
   }
 }
