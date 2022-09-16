@@ -10,7 +10,7 @@ import Lock from "./components/Lock"
 
 function App() {
 
-  const [mode, setMode] = React.useState("home")
+  const [mode, setMode] = React.useState("swap")
 
   const [menu, setMenu] = React.useState(false)
 

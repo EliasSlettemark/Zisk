@@ -191,6 +191,10 @@
 
 @media screen and (max-width: 500px) {
 
+    .lock {
+        top: 65%;
+    }
+
     .lock .container .box button span {
         font-size: 18px;
     }
