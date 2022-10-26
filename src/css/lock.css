@@ -1,5 +1,5 @@
 .lock {
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 57%;
     transform: translate(-50%, -50%);
@@ -27,11 +27,8 @@
 
 .lock .header h1 {
     margin-left: 15px;
-    background: linear-gradient(to right, #509CFB 0%, #BA31FF 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 32px;
+    color: #915BFD;
 }
 
 .lock .header img {
@@ -192,7 +189,11 @@
 @media screen and (max-width: 500px) {
 
     .lock {
-        top: 65%;
+        margin-top: 100px;
+    }
+
+    .space {
+        height: 150px;
     }
 
     .lock .container .box button span {

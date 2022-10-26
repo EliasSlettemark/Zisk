@@ -36,6 +36,7 @@ export default function Lock(){
                 </div>
                 <button>Zap</button>
             </div>
+            <div className="space"></div>
         </div>
     )
 }
